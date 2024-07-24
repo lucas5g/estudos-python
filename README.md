@@ -2,7 +2,7 @@
 Estudos de IA com python
 
 ## Índice
-- [Sobre](#sobre)
+- [Requisítos](#requisítos)
 - [Instalação](#instalação)
 - [Rodar Aplicação](#rodar-aplicação)
 
