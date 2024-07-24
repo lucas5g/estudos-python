@@ -1,4 +1,4 @@
-# ia-python
+# ai-python
 Estudos de IA com python
 
 ## Índice
@@ -20,6 +20,6 @@ pip install -r requirements.txt
 ```
 ## Rodar Aplicação
 ```
-streamlit run src/Chat_Básico.py
+streamlit run src/Leitor_Pdf.py
 ```
 
