@@ -3,6 +3,7 @@ streamlit
 moviepy
 streamlit_webrtc
 pydub
+transformers
 langchain
 langchain_community
 python-dotenv
