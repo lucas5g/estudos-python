@@ -108,14 +108,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# arquivo_audio = open('src/learning/files/original.mp3', mode='rb')
-# prompt = 'Olá, seja bem-vindo à Asimov Academy. Meu nome é Rodrigo Soares Tadewald e ensino Python!'
-
-# transcricao = client.audio.transcriptions.create(
-#     model='whisper-1',
-#     language='pt',
-#     response_format='text',
-#     file=arquivo_audio,
-#     prompt=prompt
-# )
-# print(transcricao)
