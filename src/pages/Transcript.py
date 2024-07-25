@@ -95,7 +95,7 @@ def transcreve_tab_audio():
         st.write(transcricao)
 def main():
     st.header("Bem-vindo ao Transcript🎙️")
-    st.markdown("#### Transcreva aúdio do microfone, de vídeos e de arquivos de áudio")
+    st.markdown("#### Transcreva aúdio do microfone, vídeos e áudios")
     tab_mic, tab_video, tab_audio = st.tabs(["Microfone", "Vídeo", "Áudio"])
     
     with tab_mic:
