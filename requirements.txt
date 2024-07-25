@@ -1,30 +1,21 @@
 openai
+streamlit
+moviepy
+streamlit_webrtc
+pydub
 langchain
 langchain_community
 python-dotenv
 langchain-openai 
-streamlit
-
-#dependencias youtube-assistent
 youtube-transcript-api
 faiss-cpu
-
-#chatbot
 langchain_experimental 
 numexpr
 google-search-results 
 langchainhub 
-
-#grop
 langchain-groq
-
-#agent pandas
 tabulate
-
-#agente de viagens
 wikipedia
 duckduckgo-search 
 langchain-chroma
-
-#Leitor pdf
 pypdf
