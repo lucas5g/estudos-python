@@ -6,15 +6,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+os.makedirs("src/chats", exist_ok=True)
 
 def select_chat(chat_file):
+    st.session_state["chat_current"] = chat_file
+    
     if not chat_file:
         st.session_state["messages"] = []
         return
 
     with open(f"src/chats/{chat_file}") as file:
         st.session_state["messages"] = json.load(file)
-        st.session_state["chat_current"] = chat_file
 
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
