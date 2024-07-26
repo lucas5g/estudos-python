@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+st.file_system_path('src/chats')
 os.makedirs("src/chats", exist_ok=True)
 
 def select_chat(chat_file):
