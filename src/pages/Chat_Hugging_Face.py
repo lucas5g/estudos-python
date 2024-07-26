@@ -43,9 +43,3 @@ if pergunta_usuario:
 
     res = requests.post(url, json=json, headers=headers).json()
     mensagem_chat = res[0]["generated_text"].split(token_modelo)[-1]
-    mensagens.append({"role": "assistant", "content": mensagem_chat})
-
-with area_chat.container():
-    for mensagem in mensagens:
-        chat = st.chat_message(mensagem["role"])
-        chat.markdown(mensagem["content"])
