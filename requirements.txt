@@ -21,3 +21,4 @@ duckduckgo-search
 langchain-chroma
 pypdf
 peewee
+sounddevice

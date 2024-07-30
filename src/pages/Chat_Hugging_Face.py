@@ -6,6 +6,8 @@ import requests
 
 load_dotenv()
 
+token = os.getenv("HF_KEY")
+
 modelos = {
     "mistralai/Mixtral-8x7B-Instruct-v0.1": "[/INST]",
     "google/gemma-7b-it": "<start_of_turn>model\n",
@@ -21,9 +23,9 @@ if "modelo_atual" not in st.session_state or st.session_state["modelo_atual"] !=
     st.session_state["mensagens"] = []
 
 nome_modelo = st.session_state["modelo_atual"]
-tokenizer = AutoTokenizer.from_pretrained(nome_modelo, token=os.getenv("HF_KEY"))
+tokenizer = AutoTokenizer.from_pretrained(nome_modelo, token=token)
 url = f"https://api-inference.huggingface.co/models/{nome_modelo}"
-headers = {"Authorization": f"Bearer {os.getenv('HF_KEY')}"}
+headers = {"Authorization": f"Bearer {token}"}
 
 mensagens = st.session_state["mensagens"]
 area_chat = st.empty()
