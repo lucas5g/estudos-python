@@ -8,3 +8,6 @@ __pycache__
 temp
 chats
 *.db
+*.jpeg
+*.png 
+*.jpg
