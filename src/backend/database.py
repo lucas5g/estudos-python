@@ -14,5 +14,3 @@ class Chat(Model):
 db.connect()
 db.create_tables([Chat])
 
-
-Chat(name='test', history=[], created_at="2022", updated_at="2022").save()

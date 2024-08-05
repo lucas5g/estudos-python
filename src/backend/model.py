@@ -29,6 +29,4 @@ models = [
     "GPT-4o",    
 ]
 
-model = find_model('LLAMA3-8B-8192')
 
-print(f'model => {model}')
