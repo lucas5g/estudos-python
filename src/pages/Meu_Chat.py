@@ -2,7 +2,6 @@ import streamlit as st
 from backend.model import find_model, models
 from backend.database import Chat
 from backend.chat import upsert_chat
-import json
 import ast 
 
 st.set_page_config(page_title="Meu Chat", layout="wide")
