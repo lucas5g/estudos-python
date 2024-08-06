@@ -3,7 +3,6 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_groq import ChatGroq
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
-from typing import List
 import os
 import streamlit as st
 
