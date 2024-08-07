@@ -24,6 +24,7 @@ def find_similarity(db:FAISS, query:str):
     return "".join(page_contents)
     
 def handle_prompt(contents: str, query:str):
+    
     prompt = f"""
         Você é um assistente que todo seu conhecimento está no texto abaixo.
         "{contents}",
