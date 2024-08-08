@@ -1,2 +1,3 @@
 - Troca ícone do site
 - git blame
+- Cria aplicação de transcrição
