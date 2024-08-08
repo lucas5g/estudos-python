@@ -1,3 +1,4 @@
 - Troca ícone do site
 - git blame
 - Cria aplicação de transcrição
+- aplicação para extrair as informações do site ex: No site g1 extrar título, descrição e categoria
