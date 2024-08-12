@@ -45,9 +45,9 @@ def main(file: str, query: str):
     
     return handle_prompt(contents, query)
  
-
 title = "Leitor PDF"
-st.set_page_config(page_title=title, layout="wide")
+st.set_page_config(page_title=title, layout="wide", page_icon="💬")
+
 st.title(title)
 
 file = st.file_uploader("Escolha um PDF e faça pesquisas no documento", "pdf")
