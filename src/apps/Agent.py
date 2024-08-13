@@ -2,7 +2,6 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from typing import List
 
-
 def employee_find(name:str):
     if name == 'Lucas':
         return {name:'Lucas de Sousa Assunção', "position": "Backend"}
@@ -35,8 +34,7 @@ def get_response_model(messages:List):
 def init():
 
     if "messages_agent" not in st.session_state:
-        st.session_state["messages_agent"] = []
-        
+        st.session_state["messages_agent"] = []        
 
 def main():
     title = "Agent"
@@ -63,4 +61,3 @@ def main():
 
 init()
 main()
-st.write(movies_current_find())

@@ -4,7 +4,7 @@ from backend.database import Chat
 from backend.chat import upsert_chat
 import ast 
 
-st.set_page_config(page_title="Meu Chat", layout="wide")
+# st.set_page_config(layout="wide")
 
 # Header
 model_name = st.selectbox(label="Modelos", options=models)

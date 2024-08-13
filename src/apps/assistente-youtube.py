@@ -5,7 +5,9 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import YoutubeLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.prompts import ChatPromptTemplate
-from utils.model import model
+from langchain_groq import ChatGroq
+
+model = ChatGroq(temperature=0, model="llama3-8b-8192")
 
 import os
 
@@ -68,4 +70,4 @@ if youtube_url and query and button:
     db = create_vector_from_youtube_url(youtube_url)
     res, docs = get_response_from_query(db, query)
 
-    st.chat_message('assistant').write_stream(res)
+    st.chat_message("assistant").write_stream(res)

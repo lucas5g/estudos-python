@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    lucas:
+      email: lucas@mail.com
+      name: Lucas de Sousa 
+      password: $2b$12$MYATQeq1sktsoX8ELcBhoeW80G51BGft9v8Y.w2MJzGU4mj6VH1B6
+    rbriggs:
+      email: rbriggs@gmail.com
+      name: Rebecca Briggs
+      password: def # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: random_signature_key # Must be string
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - melsby@gmail.com

@@ -1,6 +1,6 @@
 from peewee import SqliteDatabase, Model, CharField, DateTimeField
 
-db = SqliteDatabase('src/backend/meu-chat.db')
+db = SqliteDatabase('src/apps/backend/meu-chat.db')
 
 class Chat(Model):
     name = CharField()
