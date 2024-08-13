@@ -1,3 +1,7 @@
 - Cria aplicação de transcrição
 - aplicação para extrair as informações do site ex: No site g1 extrar título, descrição e categoria
-- criar meu chat tipo jarvis (com agents)
+- criar meu chat tipo jarvis (com agents) 
+- criar gerador de crud com prisma
+- dados interaveis
+- inverter uma string 
+- converter Set para list
