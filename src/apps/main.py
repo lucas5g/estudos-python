@@ -18,6 +18,7 @@ def main():
     st.set_page_config(layout="wide")
 
     with st.form("form_login"):
+        st.subheader('Login')
         token = st.text_input(
             "Token",
             placeholder="Token gerado no front. Ex: U2FsdGVkX19/4P3ffbr4TZEq...",
@@ -30,11 +31,13 @@ def main():
             "https://dev.gerais.mg.def.br/service/scsdp/login/interno", data=payload
         )
 
-        st.session_state["jwt"] = res.text
+        if res.status_code == 201:
+            st.session_state["jwt"] = res.text
+            return 
+        st.error("Erro no Login.")
 
 
-if "jwt" not in st.session_state:
-    st.session_state["jwt"] = ''
+if "jwt" not in st.session_state or st.session_state["jwt"] == '':    
     main()
 else:
     navigation()
