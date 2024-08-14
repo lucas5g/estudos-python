@@ -5,6 +5,7 @@ import requests
 def navigation():
     pg = st.navigation(
         [
+            st.Page("agent.py", title="Agent"),
             st.Page("chat.py", title="Meu Chat"),
             st.Page("assistente-youtube.py", title="Assistente Youtube"),
             st.Page("leitor-pdf.py", title="Leitor PDF"),
@@ -41,3 +42,4 @@ if "jwt" not in st.session_state or st.session_state["jwt"] == '':
     main()
 else:
     navigation()
+# navigation()
