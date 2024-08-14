@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/chatus.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="d-flex h-100">
+        <!-- Salas -->
+        <div class="chat-rooms h-100 w-25">
+            <div class="rooms m-3">
+                <div class="d-flex justify-content-between">
+                    <h3>chat<span class="text-primary">us</span></h3>
+                    <button type="button" class="btn btn-transparent mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-plus-circle-fill text-primary"></i></button>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!-- Mensagens -->
+        <div class="chat-messages h-100 w-75">
+
+
+
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+    <script defer src="{% static 'js/chatus.js' %}"></script>
+{% endblock %}
