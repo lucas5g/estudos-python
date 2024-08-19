@@ -60,7 +60,6 @@ def productivity_find() -> List:
     "Retorna as produtividades do usuário que solicitou"
     headers = {
         "Authorization": f"Bearer {st.session_state['jwt']}"
-        # "Authorization": "Bearer eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMTMyNTIwOC03ZmIzLTRhMWUtYjhhNC1mOGUyNWYzNTIxZWUiLCJ0eXBlIjoiVVNVQVJJT19JTlRFUk5PIiwiZmlzdCI6ZmFsc2UsImlhdCI6MTcyMzY1OTk1MywiZXhwIjoxNzIzNjY3MTUzLCJqdGkiOiIxMC4yMzAuMzIuMTIifQ.tOLRJSsKxcMrdCSHw8qV7uzwcxtCUmS-IOpa9OiDwGyNf83iItcw_7ejzf5TzH33"
     }
 
     res = requests.get(
