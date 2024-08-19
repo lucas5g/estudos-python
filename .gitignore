@@ -2,7 +2,6 @@
 .env
 __pycache__
 *.pyc
-*.pdf
 *.mp3
 *.mp4
 temp
