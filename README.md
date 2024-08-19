@@ -1,5 +1,5 @@
-# ai-python
-Estudos de IA com python
+# estudos-python
+Estudos Python
 
 ## Índice
 - [Requisítos](#requisítos)
