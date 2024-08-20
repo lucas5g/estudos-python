@@ -11,4 +11,5 @@ chats
 *.png 
 *.jpg
 *.sqlite3 
-*.log
+*.log 
+*.csv
