@@ -5,7 +5,8 @@
 - dados interaveis
 - inverter uma string 
 - converter Set para list
-- builtin do python
+- builtin do python 
+- aplicacao para pegar uma lista de palavras e retornar uma lista com seus siginificados
 - retornar todos os numeros impares apartir de um valor
 https://hub.asimov.academy/curso/atividade/compreensao-em-listas/
 https://hub.asimov.academy/curso/atividade/lambda/

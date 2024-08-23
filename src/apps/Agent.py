@@ -84,7 +84,7 @@ def get_response_model(query: str):
 
     prompt = ChatPromptTemplate.from_messages(
         [
-            ("system", "Você é um assistente útil que retorna pedidos dos usuários"),
+            ("system", "Seu nome é EstudoBot, você é um assistente útil que retorna pedidos dos usuários"),
             ("human", "{input}"),
             ("placeholder", "{agent_scratchpad}"),
         ]
