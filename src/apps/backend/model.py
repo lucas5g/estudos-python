@@ -4,10 +4,11 @@ from langchain_openai import ChatOpenAI
 import os
 
 
+print(os.getenv("GROQ_API_KEY"))
 def find_model(model:str):
     model = model.lower()
     
-    if model == 'llma3-8b-8192' or model == 'llama-3.1-8b-instant':
+    if model == 'llama3-8b-8192' or model == 'llama-3.1-8b-instant':
         return ChatGroq(
             model=model,
             temperature=0,
