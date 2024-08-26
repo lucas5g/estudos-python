@@ -33,11 +33,3 @@ words = st.text_area(label="Palavras", placeholder="Passe uma lista de Palavras.
 if words:
     stream = chain.stream({"words": words})
     st.write_stream(stream)
-
-
-[
-    {"role": "user", "content": "1+1"},
-    {"role": "assistant", "content": "1 + 1 = 2"},
-    {"role": "user", "content": "2+2"},
-    {"role": "assistant", "content": "2 + 2 = 4"},
-]
