@@ -10,3 +10,5 @@
 - retornar todos os numeros impares apartir de um valor
 https://hub.asimov.academy/curso/atividade/compreensao-em-listas/
 https://hub.asimov.academy/curso/atividade/lambda/
+
+criar aplicação para bater ponto
