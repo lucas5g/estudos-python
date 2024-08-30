@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "@google-cloud/speech": "^6.7.0"
+    "@google-cloud/speech": "^6.7.0",
+    "vitest": "^2.0.5"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
   }
 }
