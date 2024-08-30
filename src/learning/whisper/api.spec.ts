@@ -7,7 +7,7 @@ describe("api", () => {
   it('/upload post', async () => {
     const res = await request(api)
       .post('/transcrever')
-      .attach("file", `${__dirname}/videoTeste.mp4`)
+      .attach("file", `${__dirname}/test.mp4`)
 
     expect(res.body).toMatchObject({
       text: 'rapazes vamos começar a contar uma linda história parece que vai ser uma aventura e tanto diário de bordo fotos músicas e Animação coloque trecho para retrospectiva rico parece que temos um lindo trabalho para fazer vamos fazer uma linda retrospectiva animada é capaz do recruta não sobreviver simbora'
