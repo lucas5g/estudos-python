@@ -13,3 +13,6 @@ chats
 *.sqlite3 
 *.log 
 *.csv
+*.wav
+
+node_modules

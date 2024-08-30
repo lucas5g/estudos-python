@@ -27,5 +27,7 @@ if promtp:
     res = st.chat_message("assistant").write_stream(stream)    
     st.session_state["messages"].append({"role": "assistant", "content": res})
     
-    
-    
+def clear_messages():
+    st.session_state["messages"] = []
+with st.sidebar:
+    st.button("Limpar Histórico", use_container_width=True, on_click=clear_messages)
