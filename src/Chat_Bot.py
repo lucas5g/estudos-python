@@ -10,7 +10,7 @@ if "messages" not in st.session_state:
 
 ##main
 
-st.header("Chat Llama3.1 Groq")
+st.header("Chat Bot Llama3.1 Groq")
 
 for message in st.session_state["messages"]:
     st.chat_message(message["role"]).markdown(message["content"])
